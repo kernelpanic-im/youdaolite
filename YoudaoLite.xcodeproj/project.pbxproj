@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB08DF6B1893774600FA000F /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB08DF6A1893774600FA000F /* Carbon.framework */; };
+		BB08DF6D18937C3900FA000F /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BB08DF6C18937C3900FA000F /* icon.icns */; };
+		BB26156118935B9F00B21D93 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB26156018935B9F00B21D93 /* Cocoa.framework */; };
+		BB26156B18935B9F00B21D93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB26156918935B9F00B21D93 /* InfoPlist.strings */; };
+		BB26156D18935B9F00B21D93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB26156C18935B9F00B21D93 /* main.m */; };
+		BB26157418935B9F00B21D93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB26157318935B9F00B21D93 /* AppDelegate.m */; };
+		BB26157718935B9F00B21D93 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB26157518935B9F00B21D93 /* MainMenu.xib */; };
+		BB26158018935B9F00B21D93 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB26157F18935B9F00B21D93 /* XCTest.framework */; };
+		BB26158118935B9F00B21D93 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB26156018935B9F00B21D93 /* Cocoa.framework */; };
+		BB26158918935B9F00B21D93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB26158718935B9F00B21D93 /* InfoPlist.strings */; };
+		BB26158B18935B9F00B21D93 /* YoudaoLiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB26158A18935B9F00B21D93 /* YoudaoLiteTests.m */; };
+		BB2615971893743A00B21D93 /* YoudaoLitePrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2615951893743A00B21D93 /* YoudaoLitePrefsController.m */; };
+		BB2615981893743A00B21D93 /* YoudaoLitePrefsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2615961893743A00B21D93 /* YoudaoLitePrefsController.xib */; };
+		BB2615A41893758E00B21D93 /* MASShortcut+Monitoring.m in Sources */ = {isa = PBXBuildFile; fileRef = BB26159B1893758E00B21D93 /* MASShortcut+Monitoring.m */; };
+		BB2615A51893758E00B21D93 /* MASShortcut+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = BB26159D1893758E00B21D93 /* MASShortcut+UserDefaults.m */; };
+		BB2615A61893758E00B21D93 /* MASShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = BB26159F1893758E00B21D93 /* MASShortcut.m */; };
+		BB2615A71893758E00B21D93 /* MASShortcutView+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2615A11893758E00B21D93 /* MASShortcutView+UserDefaults.m */; };
+		BB2615A81893758E00B21D93 /* MASShortcutView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2615A31893758E00B21D93 /* MASShortcutView.m */; };
+		BB8B6081189CA31100C6C177 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8B6080189CA31100C6C177 /* MAAttachedWindow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BB8B6085189CB43A00C6C177 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8B6084189CB43A00C6C177 /* Crashlytics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB26158218935B9F00B21D93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB26155518935B9F00B21D93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB26155C18935B9F00B21D93;
+			remoteInfo = YoudaoLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB08DF6A1893774600FA000F /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		BB08DF6C18937C3900FA000F /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		BB26155D18935B9F00B21D93 /* YoudaoLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoudaoLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB26156018935B9F00B21D93 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BB26156318935B9F00B21D93 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BB26156418935B9F00B21D93 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BB26156518935B9F00B21D93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BB26156818935B9F00B21D93 /* YoudaoLite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YoudaoLite-Info.plist"; sourceTree = "<group>"; };
+		BB26156A18935B9F00B21D93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB26156C18935B9F00B21D93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB26156E18935B9F00B21D93 /* YoudaoLite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YoudaoLite-Prefix.pch"; sourceTree = "<group>"; };
+		BB26157218935B9F00B21D93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB26157318935B9F00B21D93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BB26157618935B9F00B21D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BB26157E18935B9F00B21D93 /* YoudaoLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoudaoLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB26157F18935B9F00B21D93 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BB26158618935B9F00B21D93 /* YoudaoLiteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YoudaoLiteTests-Info.plist"; sourceTree = "<group>"; };
+		BB26158818935B9F00B21D93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB26158A18935B9F00B21D93 /* YoudaoLiteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoudaoLiteTests.m; sourceTree = "<group>"; };
+		BB2615941893743A00B21D93 /* YoudaoLitePrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoudaoLitePrefsController.h; sourceTree = "<group>"; };
+		BB2615951893743A00B21D93 /* YoudaoLitePrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoudaoLitePrefsController.m; sourceTree = "<group>"; };
+		BB2615961893743A00B21D93 /* YoudaoLitePrefsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YoudaoLitePrefsController.xib; sourceTree = "<group>"; };
+		BB26159A1893758E00B21D93 /* MASShortcut+Monitoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcut+Monitoring.h"; sourceTree = "<group>"; };
+		BB26159B1893758E00B21D93 /* MASShortcut+Monitoring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcut+Monitoring.m"; sourceTree = "<group>"; };
+		BB26159C1893758E00B21D93 /* MASShortcut+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcut+UserDefaults.h"; sourceTree = "<group>"; };
+		BB26159D1893758E00B21D93 /* MASShortcut+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcut+UserDefaults.m"; sourceTree = "<group>"; };
+		BB26159E1893758E00B21D93 /* MASShortcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcut.h; sourceTree = "<group>"; };
+		BB26159F1893758E00B21D93 /* MASShortcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcut.m; sourceTree = "<group>"; };
+		BB2615A01893758E00B21D93 /* MASShortcutView+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcutView+UserDefaults.h"; sourceTree = "<group>"; };
+		BB2615A11893758E00B21D93 /* MASShortcutView+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcutView+UserDefaults.m"; sourceTree = "<group>"; };
+		BB2615A21893758E00B21D93 /* MASShortcutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcutView.h; sourceTree = "<group>"; };
+		BB2615A31893758E00B21D93 /* MASShortcutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcutView.m; sourceTree = "<group>"; };
+		BB8B607F189CA31100C6C177 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
+		BB8B6080189CA31100C6C177 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
+		BB8B6082189CAC1100C6C177 /* YoudaoLite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = YoudaoLite.entitlements; sourceTree = "<group>"; };
+		BB8B6084189CB43A00C6C177 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = thirdparty/Crashlytics.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB26155A18935B9F00B21D93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB08DF6B1893774600FA000F /* Carbon.framework in Frameworks */,
+				BB8B6085189CB43A00C6C177 /* Crashlytics.framework in Frameworks */,
+				BB26156118935B9F00B21D93 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB26157B18935B9F00B21D93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB26158118935B9F00B21D93 /* Cocoa.framework in Frameworks */,
+				BB26158018935B9F00B21D93 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB08DF7318937EC500FA000F /* thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				BB8B607E189CA31100C6C177 /* MAAttachedWindow */,
+				BB2615991893758E00B21D93 /* MASShortcut */,
+			);
+			name = thirdparty;
+			sourceTree = "<group>";
+		};
+		BB26155418935B9F00B21D93 = {
+			isa = PBXGroup;
+			children = (
+				BB08DF7318937EC500FA000F /* thirdparty */,
+				BB26156618935B9F00B21D93 /* YoudaoLite */,
+				BB26158418935B9F00B21D93 /* YoudaoLiteTests */,
+				BB26155F18935B9F00B21D93 /* Frameworks */,
+				BB26155E18935B9F00B21D93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB26155E18935B9F00B21D93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB26155D18935B9F00B21D93 /* YoudaoLite.app */,
+				BB26157E18935B9F00B21D93 /* YoudaoLiteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB26155F18935B9F00B21D93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB8B6084189CB43A00C6C177 /* Crashlytics.framework */,
+				BB08DF6A1893774600FA000F /* Carbon.framework */,
+				BB26156018935B9F00B21D93 /* Cocoa.framework */,
+				BB26157F18935B9F00B21D93 /* XCTest.framework */,
+				BB26156218935B9F00B21D93 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB26156218935B9F00B21D93 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB26156318935B9F00B21D93 /* AppKit.framework */,
+				BB26156418935B9F00B21D93 /* CoreData.framework */,
+				BB26156518935B9F00B21D93 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BB26156618935B9F00B21D93 /* YoudaoLite */ = {
+			isa = PBXGroup;
+			children = (
+				BB8B6082189CAC1100C6C177 /* YoudaoLite.entitlements */,
+				BB26157218935B9F00B21D93 /* AppDelegate.h */,
+				BB26157318935B9F00B21D93 /* AppDelegate.m */,
+				BB2615941893743A00B21D93 /* YoudaoLitePrefsController.h */,
+				BB2615951893743A00B21D93 /* YoudaoLitePrefsController.m */,
+				BB2615961893743A00B21D93 /* YoudaoLitePrefsController.xib */,
+				BB26157518935B9F00B21D93 /* MainMenu.xib */,
+				BB26156718935B9F00B21D93 /* Supporting Files */,
+			);
+			path = YoudaoLite;
+			sourceTree = "<group>";
+		};
+		BB26156718935B9F00B21D93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB08DF6C18937C3900FA000F /* icon.icns */,
+				BB26156818935B9F00B21D93 /* YoudaoLite-Info.plist */,
+				BB26156918935B9F00B21D93 /* InfoPlist.strings */,
+				BB26156C18935B9F00B21D93 /* main.m */,
+				BB26156E18935B9F00B21D93 /* YoudaoLite-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB26158418935B9F00B21D93 /* YoudaoLiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB26158A18935B9F00B21D93 /* YoudaoLiteTests.m */,
+				BB26158518935B9F00B21D93 /* Supporting Files */,
+			);
+			path = YoudaoLiteTests;
+			sourceTree = "<group>";
+		};
+		BB26158518935B9F00B21D93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB26158618935B9F00B21D93 /* YoudaoLiteTests-Info.plist */,
+				BB26158718935B9F00B21D93 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB2615991893758E00B21D93 /* MASShortcut */ = {
+			isa = PBXGroup;
+			children = (
+				BB26159A1893758E00B21D93 /* MASShortcut+Monitoring.h */,
+				BB26159B1893758E00B21D93 /* MASShortcut+Monitoring.m */,
+				BB26159C1893758E00B21D93 /* MASShortcut+UserDefaults.h */,
+				BB26159D1893758E00B21D93 /* MASShortcut+UserDefaults.m */,
+				BB26159E1893758E00B21D93 /* MASShortcut.h */,
+				BB26159F1893758E00B21D93 /* MASShortcut.m */,
+				BB2615A01893758E00B21D93 /* MASShortcutView+UserDefaults.h */,
+				BB2615A11893758E00B21D93 /* MASShortcutView+UserDefaults.m */,
+				BB2615A21893758E00B21D93 /* MASShortcutView.h */,
+				BB2615A31893758E00B21D93 /* MASShortcutView.m */,
+			);
+			name = MASShortcut;
+			path = thirdparty/MASShortcut;
+			sourceTree = "<group>";
+		};
+		BB8B607E189CA31100C6C177 /* MAAttachedWindow */ = {
+			isa = PBXGroup;
+			children = (
+				BB8B607F189CA31100C6C177 /* MAAttachedWindow.h */,
+				BB8B6080189CA31100C6C177 /* MAAttachedWindow.m */,
+			);
+			name = MAAttachedWindow;
+			path = thirdparty/MAAttachedWindow;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB26155C18935B9F00B21D93 /* YoudaoLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB26158E18935B9F00B21D93 /* Build configuration list for PBXNativeTarget "YoudaoLite" */;
+			buildPhases = (
+				BB26155918935B9F00B21D93 /* Sources */,
+				BB26155A18935B9F00B21D93 /* Frameworks */,
+				BB26155B18935B9F00B21D93 /* Resources */,
+				BB8B6083189CB3B900C6C177 /* Setup Crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YoudaoLite;
+			productName = YoudaoLite;
+			productReference = BB26155D18935B9F00B21D93 /* YoudaoLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB26157D18935B9F00B21D93 /* YoudaoLiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB26159118935B9F00B21D93 /* Build configuration list for PBXNativeTarget "YoudaoLiteTests" */;
+			buildPhases = (
+				BB26157A18935B9F00B21D93 /* Sources */,
+				BB26157B18935B9F00B21D93 /* Frameworks */,
+				BB26157C18935B9F00B21D93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB26158318935B9F00B21D93 /* PBXTargetDependency */,
+			);
+			name = YoudaoLiteTests;
+			productName = YoudaoLiteTests;
+			productReference = BB26157E18935B9F00B21D93 /* YoudaoLiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB26155518935B9F00B21D93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = kernelpanic.im;
+				TargetAttributes = {
+					BB26155C18935B9F00B21D93 = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					BB26157D18935B9F00B21D93 = {
+						TestTargetID = BB26155C18935B9F00B21D93;
+					};
+				};
+			};
+			buildConfigurationList = BB26155818935B9F00B21D93 /* Build configuration list for PBXProject "YoudaoLite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB26155418935B9F00B21D93;
+			productRefGroup = BB26155E18935B9F00B21D93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB26155C18935B9F00B21D93 /* YoudaoLite */,
+				BB26157D18935B9F00B21D93 /* YoudaoLiteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB26155B18935B9F00B21D93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB08DF6D18937C3900FA000F /* icon.icns in Resources */,
+				BB26156B18935B9F00B21D93 /* InfoPlist.strings in Resources */,
+				BB2615981893743A00B21D93 /* YoudaoLitePrefsController.xib in Resources */,
+				BB26157718935B9F00B21D93 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB26157C18935B9F00B21D93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB26158918935B9F00B21D93 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB8B6083189CB3B900C6C177 /* Setup Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Setup Crashlytics";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "thirdparty/Crashlytics.framework/run 00294b074c27a6569db329a72df442fbff108a8c";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB26155918935B9F00B21D93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB26157418935B9F00B21D93 /* AppDelegate.m in Sources */,
+				BB2615A41893758E00B21D93 /* MASShortcut+Monitoring.m in Sources */,
+				BB2615971893743A00B21D93 /* YoudaoLitePrefsController.m in Sources */,
+				BB2615A51893758E00B21D93 /* MASShortcut+UserDefaults.m in Sources */,
+				BB2615A81893758E00B21D93 /* MASShortcutView.m in Sources */,
+				BB2615A71893758E00B21D93 /* MASShortcutView+UserDefaults.m in Sources */,
+				BB8B6081189CA31100C6C177 /* MAAttachedWindow.m in Sources */,
+				BB26156D18935B9F00B21D93 /* main.m in Sources */,
+				BB2615A61893758E00B21D93 /* MASShortcut.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB26157A18935B9F00B21D93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB26158B18935B9F00B21D93 /* YoudaoLiteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB26158318935B9F00B21D93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB26155C18935B9F00B21D93 /* YoudaoLite */;
+			targetProxy = BB26158218935B9F00B21D93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB26156918935B9F00B21D93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB26156A18935B9F00B21D93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BB26157518935B9F00B21D93 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB26157618935B9F00B21D93 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		BB26158718935B9F00B21D93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB26158818935B9F00B21D93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB26158C18935B9F00B21D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BB26158D18935B9F00B21D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BB26158F18935B9F00B21D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = YoudaoLite/YoudaoLite.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/thirdparty",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YoudaoLite/YoudaoLite-Prefix.pch";
+				INFOPLIST_FILE = "YoudaoLite/YoudaoLite-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BB26159018935B9F00B21D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = YoudaoLite/YoudaoLite.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/thirdparty",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YoudaoLite/YoudaoLite-Prefix.pch";
+				INFOPLIST_FILE = "YoudaoLite/YoudaoLite-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BB26159218935B9F00B21D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YoudaoLite.app/Contents/MacOS/YoudaoLite";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YoudaoLite/YoudaoLite-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YoudaoLiteTests/YoudaoLiteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BB26159318935B9F00B21D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YoudaoLite.app/Contents/MacOS/YoudaoLite";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YoudaoLite/YoudaoLite-Prefix.pch";
+				INFOPLIST_FILE = "YoudaoLiteTests/YoudaoLiteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB26155818935B9F00B21D93 /* Build configuration list for PBXProject "YoudaoLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB26158C18935B9F00B21D93 /* Debug */,
+				BB26158D18935B9F00B21D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB26158E18935B9F00B21D93 /* Build configuration list for PBXNativeTarget "YoudaoLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB26158F18935B9F00B21D93 /* Debug */,
+				BB26159018935B9F00B21D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB26159118935B9F00B21D93 /* Build configuration list for PBXNativeTarget "YoudaoLiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB26159218935B9F00B21D93 /* Debug */,
+				BB26159318935B9F00B21D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB26155518935B9F00B21D93 /* Project object */;
+}
